@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: "Roboto", system-ui;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: darkcyan;
+    padding: 16px 0;
+    margin-bottom: 32px;
+}
+
+header h1 {
+    color: #fff;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+}
+
+
+header nav li a {
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#sobre {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sobre img {
+    max-width: 480px;
+    padding-bottom: 16px;
+}
+
+#sobre h2 {
+    color: darkcyan;
+    padding-bottom: 24px;
+    border-bottom: darkcyan solid 2px;
+}
+
+#sobre p {
+    padding-top: 24px;
+}
+
+.sobrealoja {
+    padding-left: 32px;
+}
+
+#produto h2 {
+    color: darkcyan;
+    padding-bottom: 24px;
+    border-bottom: darkcyan solid 2px;
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li {
+    list-style: none;
+}
+
+.produtos img {
+    max-width: 100%;
+    padding: 0 12px;
+}
+
+.produtos button {
+    width: 95%;
+    border: none;
+    padding: 8px 2px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #fff;
+    background-color: darkcyan;
+    margin: 8px 0 16px 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+    #sobre {
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    #sobre img {
+        max-width: 100%;
+    }
+
+    .sobrealoja {
+        padding-left: 0;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .produtos {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    #sobre {
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    #sobre img {
+        max-width: 100%;
+    }
+
+    .sobrealoja {
+        padding-left: 0;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+    }
+}
